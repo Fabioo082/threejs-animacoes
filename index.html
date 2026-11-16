@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Three.js - Animações</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="painel">
+        <div class="grupo">
+            <h3>Personagem 1 (Soldado)</h3>
+            <button onclick="trocarAnimacaoSoldado('Idle')">Idle</button>
+            <button onclick="trocarAnimacaoSoldado('Walk')">Walk</button>
+            <button onclick="trocarAnimacaoSoldado('Run')">Run</button>
+        </div>
+
+        <div class="grupo">
+            <h3>Personagem 2 (Xbot)</h3>
+            <button onclick="trocarAnimacaoXbot('idle')">Idle</button>
+            <button onclick="trocarAnimacaoXbot('walk')">Walk</button>
+            <button onclick="trocarAnimacaoXbot('run')">Run</button>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
